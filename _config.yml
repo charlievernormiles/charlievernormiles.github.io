@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Charlie Vernor-Miles / Portfolio"
+title                    : "Charlie Vernor-Miles"
 title_separator          : "-"
 name                     : &name "Charlie Vernor-Miles"
-description              : &description "Description goes here"
+description              : &description "Website that acts as a Portfolio/CV."
 url                      : https://charlievernormiles.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "charlievernormiles/charlievernormiles.github.io"
@@ -23,11 +23,11 @@ repository               : "charlievernormiles/charlievernormiles.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Charlie V-M"
+  name             : "Charlie Vernor Miles"
   pronouns         : "he/him" 
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "UK-Based Lower Sixth Form student studying Mathematics, Computer Science, and Philosophy."
   location         : "England, United Kingdom"
-  employer         : "Lower Sixth Form"
+  employer         : "Lower Sixth Form (No Uni)"
   uri              : # URL
   email            : "charlievernormiles@gmail.com" 
 
@@ -76,7 +76,7 @@ author:
   zhihu            : # Username
 
 # Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   : "500x300.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
@@ -220,17 +220,6 @@ collections:
 
 # These settings control how pages and collections are included in the site
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
   # _pages
   - scope:
       path: ""
@@ -238,24 +227,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
   # _portfolio
   - scope:
       path: ""
@@ -265,14 +236,6 @@ defaults:
       author_profile: true
       share: true
       comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 
 # Sass/SCSS
@@ -285,7 +248,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Etc/GMT # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
